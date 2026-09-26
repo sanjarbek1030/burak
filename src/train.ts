@@ -1,3 +1,24 @@
+// MITASK-O
+// Function declaratioin
+function calculateSumOfNumbers(arr: unknown[]): number{
+  let sum = 0;
+  for (const elem of arr){
+    if(typeof elem === 'number'){
+      sum += elem
+    }
+  }
+  return sum
+}
+
+// Array examples
+const arr0926 = [10, "10", {son: 10}, true, 35]  // 45
+const arr0927 = [5, "10", 15, {son: 10}, false, 25, true, 35] // 80
+
+// Testing
+console.log(calculateSumOfNumbers(arr0926))
+console.log(calculateSumOfNumbers(arr0927))
+
+
 // MITASK-N
 // Function Declaration
 
@@ -23,18 +44,18 @@ function palindromeCheck3(str: string): boolean{
   return new_arr.join("") === str;
 }
 
-// Testing
-// palindromeCheck 1
-console.log(palindromeCheck("dad")) // true
-console.log(palindromeCheck("son")) // false
+// // Testing
+// // palindromeCheck 1
+// console.log(palindromeCheck("dad")) // true
+// console.log(palindromeCheck("son")) // false
 
-// palindromeCheck 2
-console.log(palindromeCheck2("radar")) // true
-console.log(palindromeCheck2("camera")) // false
+// // palindromeCheck 2
+// console.log(palindromeCheck2("radar")) // true
+// console.log(palindromeCheck2("camera")) // false
 
-// palindromeCheck 3
-console.log(palindromeCheck3("2002")) // true
-console.log(palindromeCheck3("2001")) // false
+// // palindromeCheck 3
+// console.log(palindromeCheck3("2002")) // true
+// console.log(palindromeCheck3("2001")) // false
 
 // New array
 const arr0920 = [1, 2, 3, 4];
