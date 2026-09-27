@@ -17,6 +17,28 @@ API Turlari:
 4...
 */ 
 
+// MITASK-P
+// Define the interface
+interface myObj{
+  a: number;
+  b: number;
+}
+// Define the function
+function objectToArray(obj: myObj){
+  let newArr = [];
+  for (let [key, value] of Object.entries(obj)){
+    newArr.push([key, value]);
+  }
+  return newArr;
+}
+
+// Define the object
+const obj = {a: 10, b: 20}
+
+// Testing
+console.log(objectToArray(obj))
+
+
 // MITASK-O
 // Function declaratioin
 function calculateSumOfNumbers(arr: unknown[]): number{
@@ -34,8 +56,8 @@ const arr0926 = [10, "10", {son: 10}, true, 35]  // 45
 const arr0927 = [5, "10", 15, {son: 10}, false, 25, true, 35] // 80
 
 // Testing
-console.log(calculateSumOfNumbers(arr0926))
-console.log(calculateSumOfNumbers(arr0927))
+//console.log(calculateSumOfNumbers(arr0926))
+//console.log(calculateSumOfNumbers(arr0927))
 
 
 // MITASK-N
