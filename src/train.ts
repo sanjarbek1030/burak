@@ -1,3 +1,14 @@
+/*
+Project Standards:
+1. Logging Standards
+2. Naming Standards:
+  camelCase: functions, methods, variables
+  PascalCase: classes
+  kebab-case: folders
+  snake_case: css
+3. Error Handling
+*/
+
 // MITASK-O
 // Function declaratioin
 function calculateSumOfNumbers(arr: unknown[]): number{
