@@ -1,0 +1,6 @@
+workspace:
+  id: c3b02cfb-f811-445f-89af-fc3bf9931d07
+cloudResources:
+  collections:
+    ../postman/collections/REST API: 58551716-1c656207-d91c-4e85-a3a2-d6a6a68e0e4d
+    ../postman/collections/BSSR: 58551716-88627d22-0b4e-4ecf-bd3d-91734eda3478

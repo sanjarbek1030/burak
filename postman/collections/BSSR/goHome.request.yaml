@@ -1,0 +1,4 @@
+$kind: http-request
+url: localhost:3003/admin
+method: GET
+order: 1000

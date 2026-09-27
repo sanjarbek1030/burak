@@ -1,0 +1,4 @@
+$kind: http-request
+url: localhost:3003/admin/signup
+method: GET
+order: 2107837568270285
