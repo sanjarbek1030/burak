@@ -4,7 +4,7 @@ Project Standards:
 2. Naming Standards:
   camelCase: functions, methods, variables
   PascalCase: classes
-  kebab-case: folders
+  kebab-case: folders, files
   snake_case: css
 3. Error Handling
 */
