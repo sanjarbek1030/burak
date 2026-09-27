@@ -9,6 +9,14 @@ Project Standards:
 3. Error Handling
 */
 
+/*
+API Turlari:
+1. Traditional API
+2. Rest API
+3. GraphQL API
+4...
+*/ 
+
 // MITASK-O
 // Function declaratioin
 function calculateSumOfNumbers(arr: unknown[]): number{

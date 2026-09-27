@@ -1,4 +1,10 @@
 $kind: http-request
 url: localhost:3003/admin/signup
 method: POST
+body:
+  type: urlencoded
+  content:
+    memberNick: Mysterio
+    memberPhone: "821055121610"
+    memberPassword: zoro1012
 order: 4445641276160263
