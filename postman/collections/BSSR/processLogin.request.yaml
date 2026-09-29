@@ -1,4 +1,13 @@
 $kind: http-request
 url: localhost:3003/admin/login
 method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"memberNick\": \"Burak\",\r
+
+    \    \"memberPassword\": \"zoro1012\"\r
+
+    }"
 order: 1983086102315567

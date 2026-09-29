@@ -4,7 +4,7 @@ method: POST
 body:
   type: urlencoded
   content:
-    memberNick: Mysterio
-    memberPhone: "821055121610"
+    memberNick: Mysterio1
+    memberPhone: "821055121611"
     memberPassword: zoro1012
 order: 4445641276160263
