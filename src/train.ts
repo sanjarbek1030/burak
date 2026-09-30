@@ -17,6 +17,19 @@ API Turlari:
 4...
 */ 
 
+// MITASK-Q
+// Define the Function
+const hasProperty = (obj: object, str: string): boolean => str in obj;
+
+// Define the car object
+const carObj = {name: "BMW", model: "M3"};
+
+// Testing
+console.log(hasProperty(carObj, "name"))
+console.log(hasProperty(carObj, "model"))
+console.log(hasProperty(carObj, "year"))
+console.log(hasProperty(carObj, "price"))
+
 // MITASK-P
 // Define the interface
 interface myObj{
@@ -36,7 +49,7 @@ function objectToArray(obj: myObj){
 const obj = {a: 10, b: 20}
 
 // Testing
-console.log(objectToArray(obj))
+//console.log(objectToArray(obj))
 
 
 // MITASK-O
