@@ -1,0 +1,13 @@
+$kind: http-request
+url: localhost:3003/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"memberNick\": \"Robert\",\r
+
+    \    \"memberPassword\": \"zoro1012\"\r
+
+    }"
+order: 2284679284031361

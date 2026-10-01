@@ -17,6 +17,11 @@ API Turlari:
 4...
 */ 
 
+/*
+Traditional Front-end Dev: SSR with EJS
+Modern Front-end Dev: SPA with REACT
+*/
+
 // MITASK-Q
 // Define the Function
 const hasProperty = (obj: object, str: string): boolean => str in obj;
