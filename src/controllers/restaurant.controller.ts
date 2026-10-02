@@ -8,27 +8,27 @@ const memberService = new MemberService();
 const restaurantController: T = {};
 
 restaurantController.goHome = (req: Request, res: Response) => {
-    console.log("goHome");
     try {
-        res.send("Home Page");
+        console.log("goHome");
+        res.render("home");
     } catch (err) {
         console.log("Error, goHome", err)
     }
 };
 
 restaurantController.getSignup = (req: Request, res: Response) => {
-    console.log("getSignup");
     try {
-        res.send("Signup Page");
+        console.log("getSignup");
+        res.render("signup");
     } catch (err) {
         console.log("Error, getSignup", err)
     }
 };
 
 restaurantController.getLogin = (req: Request, res: Response) => {
-    console.log("getLogin");
     try {
-        res.send("Login Page");
+        console.log("getLogin");
+        res.render("login");
     } catch (err) {
         console.log("Error, getLogin", err)
     }
