@@ -22,6 +22,33 @@ Traditional Front-end Dev: SSR with EJS
 Modern Front-end Dev: SPA with REACT
 */
 
+// MITASK-R
+// Define the Function
+// ikta bir-xonali son va qo'shish; 1+2
+const calculate1 = (str: string): number => Number(str[0])+Number(str[2]);
+
+// ikta ko'p-xonali son va qo'shish 10+20
+const calculate2 = (str: string): number => {
+  const [a, b] = str.split('+');
+  return Number(a) + Number(b);
+};
+
+// ko'p ko'p-xonali son va ko'p qo'shish; 10+2+3
+const calculate3 = (str: string): number => {
+  const arr = str.split('+');
+  let sum = 0;
+  for(const char of arr){
+    sum += Number(char);
+  }
+  return(sum);
+};
+
+// Testing
+console.log(calculate1("1+2")); // 3
+console.log(calculate2("10+20")); // 30
+console.log(calculate3("10+2+3")); // 15
+
+
 // MITASK-Q
 // Define the Function
 const hasProperty = (obj: object, str: string): boolean => str in obj;
@@ -30,10 +57,10 @@ const hasProperty = (obj: object, str: string): boolean => str in obj;
 const carObj = {name: "BMW", model: "M3"};
 
 // Testing
-console.log(hasProperty(carObj, "name"))
-console.log(hasProperty(carObj, "model"))
-console.log(hasProperty(carObj, "year"))
-console.log(hasProperty(carObj, "price"))
+// console.log(hasProperty(carObj, "name"))
+// console.log(hasProperty(carObj, "model"))
+// console.log(hasProperty(carObj, "year"))
+// console.log(hasProperty(carObj, "price"))
 
 // MITASK-P
 // Define the interface
