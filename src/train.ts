@@ -33,7 +33,7 @@ SESSIONlar xislatlari:
 const missingNumbers = (arr: number[]) => {
 
   let first = arr[0];
-  let last = Number(arr.pop());
+  let last = arr[arr.length-1];
   let newArr = [];
 
   if ( first > last ) {
@@ -53,11 +53,11 @@ const missingNumbers = (arr: number[]) => {
 }
 
 // Testing
-console.log(missingNumbers([3, 0, 1]));
-console.log(missingNumbers([5, 3, 1]));
-console.log(missingNumbers([5, 0, 1]));
-console.log(missingNumbers([1, 0, 0, 5]));
-console.log(missingNumbers([5, 0, 0, 0, 5]));
+console.log(missingNumbers([3, 0, 1])); // [ 3, 2, 1 ]
+console.log(missingNumbers([5, 3, 1])); // [ 5, 4, 3, 2, 1 ]
+console.log(missingNumbers([5, 0, 1])); // [ 5, 4, 3, 2, 1 ]
+console.log(missingNumbers([1, 0, 0, 5])); // [ 1, 2, 3, 4, 5 ]
+console.log(missingNumbers([5, 0, 0, 0, 5])); // Invalid argument...
 
 // MITASK-R
 // Define the Function
