@@ -30,6 +30,28 @@ SESSIONlar xislatlari:
 
 // MITASK-S
 // Define the Function
+const missingNumber = (arr: number[]) => {
+  arr.sort((a, b) => a - b);
+
+  let first = arr[0];
+  let last = arr[arr.length-1];
+
+  while (first < last){
+    if (!arr.includes(first)){
+      return first;
+    }
+    first++
+  }
+  return arr.length;
+};
+
+// Testing
+console.log(missingNumber([3, 0, 1])); // 2 is missing
+console.log(missingNumber([3, 4, 6, 2, 5, 9, 7, 1])); // 8 is missing
+console.log(missingNumber([0, 1, 2, 3])); // none is missing; returns n-th
+console.log(missingNumber([4, 5, 8, 7])); // 6 is missing
+
+// WRONG SOLUTION
 const missingNumbers = (arr: number[]) => {
 
   let first = arr[0];
@@ -53,11 +75,12 @@ const missingNumbers = (arr: number[]) => {
 }
 
 // Testing
-console.log(missingNumbers([3, 0, 1])); // [ 3, 2, 1 ]
-console.log(missingNumbers([5, 3, 1])); // [ 5, 4, 3, 2, 1 ]
-console.log(missingNumbers([5, 0, 1])); // [ 5, 4, 3, 2, 1 ]
-console.log(missingNumbers([1, 0, 0, 5])); // [ 1, 2, 3, 4, 5 ]
-console.log(missingNumbers([5, 0, 0, 0, 5])); // Invalid argument...
+// console.log(missingNumbers([3, 0, 1])); // [ 3, 2, 1 ]
+// console.log(missingNumbers([5, 3, 1])); // [ 5, 4, 3, 2, 1 ]
+// console.log(missingNumbers([5, 0, 1])); // [ 5, 4, 3, 2, 1 ]
+// console.log(missingNumbers([1, 0, 0, 5])); // [ 1, 2, 3, 4, 5 ]
+// console.log(missingNumbers([5, 0, 0, 0, 5])); // Invalid argument...
+
 
 // MITASK-R
 // Define the Function
