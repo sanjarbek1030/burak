@@ -28,6 +28,37 @@ SESSIONlar xislatlari:
 2. self destroy
 */
 
+// MITASK-S
+// Define the Function
+const missingNumbers = (arr: number[]) => {
+
+  let first = arr[0];
+  let last = Number(arr.pop());
+  let newArr = [];
+
+  if ( first > last ) {
+    while ( first >= last ) {
+      newArr.push( first );
+      first--;
+    }
+  } else if ( first < last ) {
+    while( first <= last ) {
+      newArr.push( first );
+      first++;
+    }
+  } else {
+    return "Invalid argument: First and last elements cannot be equal."
+  }
+  return newArr;
+}
+
+// Testing
+console.log(missingNumbers([3, 0, 1]));
+console.log(missingNumbers([5, 3, 1]));
+console.log(missingNumbers([5, 0, 1]));
+console.log(missingNumbers([1, 0, 0, 5]));
+console.log(missingNumbers([5, 0, 0, 0, 5]));
+
 // MITASK-R
 // Define the Function
 // ikta bir-xonali son va qo'shish; 1+2
@@ -50,9 +81,9 @@ const calculate3 = (str: string): number => {
 };
 
 // Testing
-console.log(calculate1("1+2")); // 3
-console.log(calculate2("10+20")); // 30
-console.log(calculate3("10+2+3")); // 15
+// console.log(calculate1("1+2")); // 3
+// console.log(calculate2("10+20")); // 30
+// console.log(calculate3("10+2+3")); // 15
 
 
 // MITASK-Q
