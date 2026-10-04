@@ -22,6 +22,12 @@ Traditional Front-end Dev: SSR with EJS
 Modern Front-end Dev: SPA with REACT
 */
 
+/*
+SESSIONlar xislatlari:
+1. request join
+2. self destroy
+*/
+
 // MITASK-R
 // Define the Function
 // ikta bir-xonali son va qo'shish; 1+2

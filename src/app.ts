@@ -26,7 +26,7 @@ app.use(
     session({
         secret: String(process.env.SESSION_SECRET), // s. hosil qiluvchi kod
         cookie: {
-            maxAge: 1000 * 3600 * 3 // 3 hours shuncha vaqt davomida aktiv bo'ladi
+            maxAge: 1000 * 3600 * 6 // 6 hours; shuncha vaqt davomida aktiv bo'ladi
         },
         store: store,
         resave: true, // sessionni vaqtini yangilash

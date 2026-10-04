@@ -1,4 +1,4 @@
 $kind: http-request
-url: ""
+url: localhost:3003/admin/check-me
 method: GET
 order: 4457503958704229
