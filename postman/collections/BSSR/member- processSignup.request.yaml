@@ -3,9 +3,27 @@ name: "member: processSignup"
 url: localhost:3003/admin/signup
 method: POST
 body:
-  type: urlencoded
+  type: formdata
   content:
-    memberNick: Burak
-    memberPhone: "821055121610"
-    memberPassword: zoro1012
+    - type: text
+      key: memberNick
+      value: Burak
+      description: ""
+      disabled: false
+    - type: text
+      key: memberPhone
+      value: "821055121610"
+      description: ""
+      disabled: false
+    - type: text
+      key: memberPassword
+      value: zoro1012
+      description: ""
+      disabled: false
+    - type: file
+      key: memberImage
+      src:
+        - /C:/Users/Mysterio95/Desktop/example1.jpg
+      description: ""
+      disabled: false
 order: 4445641276160263
