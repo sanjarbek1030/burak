@@ -1,4 +1,5 @@
 $kind: http-request
+name: "member: processLogin"
 url: localhost:3003/admin/login
 method: POST
 body:
