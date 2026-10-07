@@ -35,6 +35,15 @@ VALIDATIONS:
 3. Data-Base Validaion
 */
 
+// MITASK-T
+// Define the Function
+const mergeSortedArrays = (arr1: number[], arr2: number[]) =>
+  (arr1.concat(arr2)).sort((a, b) => a - b);
+
+// Testing
+console.log(mergeSortedArrays([0,3,4,31], [4,6,30])); // [0,3,4,4,6,30,31]
+console.log(mergeSortedArrays([1,3,5,7,9], [2,4,6,8])); // [1,2,3,4,5,6,7,8,9]
+
 // MITASK-S
 // Define the Function
 const missingNumber = (arr: number[]) => {
@@ -53,10 +62,10 @@ const missingNumber = (arr: number[]) => {
 };
 
 // Testing
-console.log(missingNumber([3, 0, 1])); // 2 is missing
-console.log(missingNumber([3, 4, 6, 2, 5, 9, 7, 1])); // 8 is missing
-console.log(missingNumber([0, 1, 2, 3])); // none is missing; returns n-th
-console.log(missingNumber([4, 5, 8, 7])); // 6 is missing
+// console.log(missingNumber([3, 0, 1])); // 2 is missing
+// console.log(missingNumber([3, 4, 6, 2, 5, 9, 7, 1])); // 8 is missing
+// console.log(missingNumber([0, 1, 2, 3])); // none is missing; returns n-th
+// console.log(missingNumber([4, 5, 8, 7])); // 6 is missing
 
 // WRONG SOLUTION
 const missingNumbers = (arr: number[]) => {
