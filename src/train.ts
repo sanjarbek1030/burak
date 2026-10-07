@@ -28,6 +28,13 @@ SESSIONlar xislatlari:
 2. self destroy
 */
 
+/*
+VALIDATIONS:
+1. Front-End Validation
+2. Back-End Validation
+3. Data-Base Validaion
+*/
+
 // MITASK-S
 // Define the Function
 const missingNumber = (arr: number[]) => {
