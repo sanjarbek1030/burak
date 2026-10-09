@@ -5,10 +5,48 @@ method: POST
 body:
   type: formdata
   content:
+    - type: text
+      key: productCollection
+      value: DISH
+      description: ""
+      disabled: false
+    - type: text
+      key: productName
+      value: Steak
+      description: ""
+      disabled: false
+    - type: text
+      key: productPrice
+      value: "15"
+      description: ""
+      disabled: false
+    - type: text
+      key: productLeftCount
+      value: "100"
+      description: ""
+      disabled: false
+    - type: text
+      key: productSize
+      value: NORMAL
+      description: ""
+      disabled: false
+    - type: text
+      key: productVolume
+      value: "1"
+      description: ""
+      disabled: true
+    - type: text
+      key: productDesc
+      value: Delicious meal
+      description: ""
+      disabled: false
     - type: file
       key: productImages
       src:
-        - /C:/Users/Mysterio95/Downloads/Telegram Desktop/2.jpg
+        - /C:/Users/Mysterio95/Desktop/memory-game-master/images/bear.png
+        - /C:/Users/Mysterio95/Desktop/memory-game-master/images/camel.png
+        - /C:/Users/Mysterio95/Desktop/memory-game-master/images/horse.png
+        - /C:/Users/Mysterio95/Desktop/memory-game-master/images/giraffe.png
       description: ""
       disabled: false
 order: 4489691186697606
