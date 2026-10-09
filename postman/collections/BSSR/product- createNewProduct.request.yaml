@@ -6,9 +6,9 @@ body:
   type: formdata
   content:
     - type: file
-      key: productImage
+      key: productImages
       src:
-        - /C:/Users/Mysterio95/Desktop/products.jpg
+        - /C:/Users/Mysterio95/Downloads/Telegram Desktop/2.jpg
       description: ""
       disabled: false
 order: 4489691186697606

@@ -23,7 +23,7 @@ body:
     - type: file
       key: memberImage
       src:
-        - /C:/Users/Mysterio95/Desktop/example1.jpg
+        - /C:/Users/Mysterio95/Downloads/Telegram Desktop/2.jpg
       description: ""
       disabled: false
 order: 4445641276160263
