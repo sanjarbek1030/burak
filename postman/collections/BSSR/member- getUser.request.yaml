@@ -2,4 +2,4 @@ $kind: http-request
 name: "member: getUser"
 url: localhost:3003/admin/user/all
 method: GET
-order: 6698
+order: 7000
