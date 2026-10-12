@@ -35,6 +35,24 @@ VALIDATIONS:
 3. Data-Base Validaion
 */
 
+// MITASK-V
+// Define the Function
+function countChars(str: string){
+  let obj: Record<string, number> = {};
+  for (const char of str){
+      if (char in obj){
+          obj[char] += 1;
+      } else {
+          obj[char] = 1;
+      }
+  }
+  return obj;
+}
+
+// Testing
+console.log(countChars("hello")); // { h: 1, e: 1, l: 2, o: 1 }
+console.log(countChars("successfully")); // { s: 3, u: 2, c: 2, e: 1, f: 1, l: 2, y: 1 }
+
 // MITASK-U
 // Define the Function
 // The best
@@ -43,8 +61,8 @@ const sumOddsBitwise = (num: number): number => num >> 1;
 const sumOdds = (num: number): number => Math.floor(num/2);
 
 // Testing
-console.log(sumOdds(9))  // 4 odds
-console.log(sumOddsBitwise(11)) // 5 odds
+// console.log(sumOdds(9))  // 4 odds
+// console.log(sumOddsBitwise(11)) // 5 odds
 
 // MITASK-T
 // Define the Function
