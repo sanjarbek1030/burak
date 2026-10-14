@@ -35,6 +35,35 @@ VALIDATIONS:
 3. Data-Base Validaion
 */
 
+// MITASK-W
+// Define the Function
+function chunkArray(arr: number[], num: number): number[][]{
+  const multArr: number[][] = [];
+  let start = 0;
+  let end = num;
+  const loopNum = Math.ceil(arr.length/num);
+
+  for (let i = 0; i < loopNum; i++){
+      multArr.push(arr.slice(start, end));
+      start = end;
+      end += num;
+  }
+  return multArr;
+}
+
+function chunkArray2(arr: number[], num: number): number[][]{
+  const multArr: number[][] = [];
+
+  for (let i = 0; i < arr.length; i += num){
+      multArr.push(arr.slice(i, i + num));
+  }
+  return multArr;
+}
+
+// Testing
+console.log(chunkArray([1,2,3,4,5,6,7,8,9,10], 4));
+console.log(chunkArray2([1,2,3,4,5,6,7,8,9,10], 4));
+
 // MITASK-V
 // Define the Function
 function countChars(str: string){
@@ -50,8 +79,8 @@ function countChars(str: string){
 }
 
 // Testing
-console.log(countChars("hello")); // { h: 1, e: 1, l: 2, o: 1 }
-console.log(countChars("successfully")); // { s: 3, u: 2, c: 2, e: 1, f: 1, l: 2, y: 1 }
+// console.log(countChars("hello")); // { h: 1, e: 1, l: 2, o: 1 }
+// console.log(countChars("successfully")); // { s: 3, u: 2, c: 2, e: 1, f: 1, l: 2, y: 1 }
 
 // MITASK-U
 // Define the Function
