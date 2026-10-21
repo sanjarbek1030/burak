@@ -35,6 +35,49 @@ VALIDATIONS:
 3. Data-Base Validaion
 */
 
+// MITASK-X
+// Define the Function
+function countOccurrences(obj: Record<string, any>, keyToFind: string): number {
+  let count = 0;
+
+  // Return 0 if the input is not a valid object or is null
+  if (typeof obj !== 'object' || obj === null) {
+      return count;
+  }
+
+  for (const key in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
+          // Increment count if the key matches
+          if (key === keyToFind) {
+              count++;
+          }
+          
+          // Recursively search if the value is a nested object
+          if (typeof obj[key] === 'object' && obj[key] !== null) {
+              count += countOccurrences(obj[key], keyToFind);
+          }
+      }
+  }
+
+  return count;
+}
+
+// Example Usage:
+const carData = {
+  model: 'Bugatti', 
+  steer: {
+      model: 'HANKOOK', 
+      size: 30,
+      details: {
+          model: 'X-Version'
+      }
+  }
+};
+
+// Testing
+console.log(countOccurrences(carData, 'model')); // Output: 3
+
+
 // MITASK-W
 // Define the Function
 function chunkArray(arr: number[], num: number): number[][]{
@@ -61,8 +104,8 @@ function chunkArray2(arr: number[], num: number): number[][]{
 }
 
 // Testing
-console.log(chunkArray([1,2,3,4,5,6,7,8,9,10], 4));
-console.log(chunkArray2([1,2,3,4,5,6,7,8,9,10], 4));
+// console.log(chunkArray([1,2,3,4,5,6,7,8,9,10], 4));
+// console.log(chunkArray2([1,2,3,4,5,6,7,8,9,10], 4));
 
 // MITASK-V
 // Define the Function
