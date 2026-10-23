@@ -35,6 +35,17 @@ VALIDATIONS:
 3. Data-Base Validaion
 */
 
+// MITASK-Y
+// Define the Function
+function findIntersection(arr1: number[], arr2: number[]) {
+  const set1 = new Set(arr1);
+  return arr2.filter(item => set1.has(item));
+}
+
+// Testing
+console.log(findIntersection([1, 2, 3], [3, 2, 0])); // [3, 2]
+
+
 // MITASK-X
 // Define the Function
 function countOccurrences(obj: Record<string, any>, keyToFind: string): number {
