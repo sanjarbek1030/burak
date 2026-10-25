@@ -35,6 +35,16 @@ VALIDATIONS:
 3. Data-Base Validaion
 */
 
+// MITASK-Z
+// Define the Function
+function sumEvens(arr: number[]): number {
+  return arr.reduce((sum, num) => num % 2 === 0 ? sum + num : sum, 0);
+}
+
+// Testing
+console.log(sumEvens([1, 2, 3])); // 2
+console.log(sumEvens([1, 2, 3, 4, 5, 6])); // 12
+
 // MITASK-Y
 // Define the Function
 function findIntersection(arr1: number[], arr2: number[]) {
