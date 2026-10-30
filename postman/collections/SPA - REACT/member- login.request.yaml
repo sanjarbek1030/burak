@@ -6,7 +6,7 @@ body:
   type: json
   content: "{\r
 
-    \    \"memberNick\": \"Zoro\",\r
+    \    \"memberNick\": \"Nami\",\r
 
     \    \"memberPassword\": \"zoro1012\"\r
 
