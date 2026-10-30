@@ -1,0 +1,5 @@
+$kind: http-request
+name: "member: verifyAuth"
+url: localhost:3003/member/detail
+method: GET
+order: 2284679284032361
