@@ -1,5 +1,5 @@
 import { Member } from "../libs/types/member";
-import { AUTH_TIME } from "../libs/config";
+import { AUTH_TIMER } from "../libs/config";
 import jwt from "jsonwebtoken";
 import Errors, { HttpCode, Message } from "../libs/Errors";
 
@@ -8,7 +8,7 @@ class AuthService {
 
   public createToken(payload: Member) {
     return new Promise((resolve, reject) => {
-      const duration = `${AUTH_TIME}h`;
+      const duration = `${AUTH_TIMER}h`;
       jwt.sign(
         payload,
         process.env.SECRET_TOKEN as string,
