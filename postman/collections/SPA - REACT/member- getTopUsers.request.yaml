@@ -1,5 +1,5 @@
 $kind: http-request
 name: "member: getTopUsers"
-url: ""
+url: localhost:3003/member/top-users
 method: GET
 order: 2284679284035361
