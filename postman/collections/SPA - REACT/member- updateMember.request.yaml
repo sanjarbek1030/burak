@@ -7,27 +7,28 @@ body:
   content:
     - type: text
       key: memberNick
-      value: ""
+      value: Nami
       description: ""
-      disabled: false
+      disabled: true
     - type: text
       key: memberPhone
-      value: ""
+      value: "821055128989"
       description: ""
       disabled: false
     - type: text
       key: memberAddress
       value: ""
       description: ""
-      disabled: false
+      disabled: true
     - type: text
       key: memberDesc
-      value: ""
+      value: Hi, my name is Nami
       description: ""
       disabled: false
     - type: file
       key: memberImage
-      src: []
+      src:
+        - /C:/Users/Mysterio95/Desktop/memory-game-master/images/bear.png
       description: ""
       disabled: false
 order: 2284679284034361
