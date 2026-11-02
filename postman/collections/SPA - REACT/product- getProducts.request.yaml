@@ -1,0 +1,26 @@
+$kind: http-request
+name: "product: getProducts"
+url: localhost:3003/product/all?order=productPrice&page=1&limit=4&productCollection=DISH&search=steak
+method: GET
+queryParams:
+  - key: order
+    value: productPrice
+    disabled: false
+    description: ""
+  - key: page
+    value: "1"
+    disabled: false
+    description: ""
+  - key: limit
+    value: "4"
+    disabled: false
+    description: ""
+  - key: productCollection
+    value: DISH
+    disabled: false
+    description: ""
+  - key: search
+    value: steak
+    disabled: false
+    description: ""
+order: 2284679284037361
