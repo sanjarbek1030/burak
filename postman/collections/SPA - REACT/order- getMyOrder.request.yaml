@@ -1,0 +1,18 @@
+$kind: http-request
+name: "order: getMyOrder"
+url: localhost:3003/order/all?page=1&limit=5&orderStatus=PAUSE
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+    disabled: false
+    description: ""
+  - key: limit
+    value: "5"
+    disabled: false
+    description: ""
+  - key: orderStatus
+    value: PAUSE
+    disabled: false
+    description: ""
+order: 2284679284040361
