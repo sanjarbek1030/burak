@@ -1,6 +1,6 @@
 import { Member } from "../libs/types/member";
 import OrderItemModel from "../schema/OrderItem.model";
-import OrderModel from "../schema/order.model";
+import OrderModel from "../schema/Order.model";
 import { Order, OrderInquiry, OrderItemInput, OrderUpdateInput } from "../libs/types/order";
 import { shapeIntoMongooseObjectId } from "../libs/config";
 import Errors, { HttpCode, Message } from "../libs/Errors";
